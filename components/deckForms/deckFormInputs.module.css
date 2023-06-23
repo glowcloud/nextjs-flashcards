@@ -44,5 +44,6 @@
 
   .tagSection button {
     flex-basis: 100%;
+    margin-top: 15px;
   }
 }

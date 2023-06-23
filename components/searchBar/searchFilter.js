@@ -39,7 +39,7 @@ const SearchFilter = ({
     <div className={styles.search}>
       <Search search={search} setSearch={setSearch} />
 
-      <div className={styles.filter}>
+      <div>
         <button onClick={() => setShowFilters((prevShow) => !prevShow)}>
           <Image
             priority
