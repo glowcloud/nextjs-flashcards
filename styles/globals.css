@@ -89,6 +89,7 @@ label {
   background-color: var(--background) !important;
   border-bottom-left-radius: 10px !important;
   border-bottom-right-radius: 10px !important;
+  caret-color: var(--text-primary) !important;
 }
 
 .CodeMirror:hover {
@@ -98,6 +99,10 @@ label {
 .CodeMirror:focus-within {
   outline: var(--border) auto 1px;
   background-color: var(--background);
+}
+
+.CodeMirror-cursor {
+  filter: var(--filter);
 }
 
 .editor-preview {

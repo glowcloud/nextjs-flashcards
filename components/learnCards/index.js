@@ -17,7 +17,8 @@ const shuffleCards = (decks) => {
         if (review.wasCorrect) correctReviews++;
       });
 
-      const reviewsRatio = correctReviews / card.reviews.length;
+      const reviewsRatio =
+        card.reviews.length === 0 ? 1 : correctReviews / card.reviews.length;
 
       let cardCount = 0;
 
