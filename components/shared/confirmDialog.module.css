@@ -1,0 +1,13 @@
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.controls button {
+  width: 35%;
+}
+
+.text {
+  text-align: center;
+  font-size: xx-large;
+}

@@ -1,0 +1,8 @@
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.controls button {
+  width: 35%;
+}

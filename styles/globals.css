@@ -1,18 +1,41 @@
+:root {
+  --background: white;
+  --background-secondary: black;
+  --text-primary: black;
+  --text-secondary: grey;
+  --highlight: #00adb5;
+  --error: maroon;
+  --success: green;
+  --border: #888;
+  --filter: brightness(1);
+  --highlight-filter: invert(48%) sepia(66%) saturate(4183%) hue-rotate(154deg)
+    brightness(101%) contrast(103%);
+}
+
+[data-theme="dark"] {
+  --background: #222831;
+  --background-secondary: #393e46;
+  --text-primary: #eee;
+  --filter: brightness(0) invert(1);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  background-color: var(--background);
+  color: var(--text-primary);
 }
 
 * {
   box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -20,19 +43,63 @@ img {
   height: auto;
 }
 
-h1,
-h2,
-p,
-ul {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
 button {
   padding: 0.5rem 1rem;
   font-weight: bold;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  font: inherit;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-primary) !important;
+  background-color: var(--background);
+  border: 1px solid lightgray;
+}
+
+input:hover {
+  border-color: var(--highlight) !important;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* MARKDOWN INPUT */
+.editor-toolbar {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.editor-toolbar button {
+  color: var(--text-primary);
+  background-color: var(--background) !important;
+}
+
+.CodeMirror {
+  color: var(--text-primary) !important;
+  background-color: var(--background) !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.CodeMirror:hover {
+  border-color: var(--highlight) !important;
+}
+
+.CodeMirror:focus-within {
+  outline: var(--border) auto 1px;
+  background-color: var(--background);
+}
+
+.editor-preview {
+  background-color: var(--background) !important;
 }

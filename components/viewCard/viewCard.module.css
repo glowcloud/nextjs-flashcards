@@ -1,0 +1,36 @@
+.sides {
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+.iconBtns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.iconBtns button {
+  width: 45%;
+}
+
+.reviews {
+  padding: 0 1rem;
+}
+
+.correct {
+  color: var(--success);
+}
+
+.incorrect {
+  color: var(--error);
+}
+
+@media screen and (max-width: 650px) {
+  .iconBtns button {
+    width: 100%;
+  }
+
+  .reviews {
+    padding: 0;
+  }
+}

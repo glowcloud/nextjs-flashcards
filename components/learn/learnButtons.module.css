@@ -1,0 +1,17 @@
+.optionsBtns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.optionsBtns button {
+  width: 45%;
+  margin: 10px;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 650px) {
+  .optionsBtns button {
+    width: 100%;
+  }
+}

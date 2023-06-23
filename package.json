@@ -6,8 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/runtime": "^7.22.3",
+    "easymde": "^2.18.0",
+    "firebase": "^9.22.1",
+    "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-simplemde-editor": "^5.2.0",
+    "remark": "^14.0.3",
+    "remark-html": "^15.0.2"
   }
 }

@@ -1,0 +1,49 @@
+.play button {
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  flex: 1 1 0;
+  width: 0;
+  margin: 1rem;
+  text-align: center;
+}
+
+.guessed {
+  color: var(--success) !important;
+  border-color: var(--success) !important;
+}
+
+.guessed:hover {
+  color: var(--success) !important;
+  border-color: var(--success) !important;
+  cursor: default;
+}
+
+.missed {
+  color: var(--error) !important;
+  border-color: var(--error) !important;
+}
+
+.missed:hover {
+  color: var(--highlight) !important;
+  border-color: var(--highlight) !important;
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    margin: 5px;
+  }
+
+  .card h2,
+  .card h3,
+  .card p {
+    overflow: scroll;
+    text-overflow: clip;
+  }
+}

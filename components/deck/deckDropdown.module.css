@@ -1,0 +1,24 @@
+.dropdown {
+  position: absolute;
+  background-color: var(--background);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  z-index: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dropdown button {
+  margin: 4px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .dropdown {
+    width: 100%;
+    left: 0;
+  }
+}

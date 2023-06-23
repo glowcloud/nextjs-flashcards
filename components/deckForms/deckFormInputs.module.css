@@ -1,0 +1,48 @@
+.tagSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tagSection input {
+  flex-basis: 64%;
+}
+
+.tagSection button {
+  flex-basis: 35%;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.tags p {
+  margin: 10px 0;
+  padding: 0 5px;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.error {
+  color: var(--error);
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .tagSection input {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .tagSection button {
+    flex-basis: 100%;
+  }
+}
