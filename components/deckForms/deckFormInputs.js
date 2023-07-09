@@ -30,12 +30,12 @@ const DeckFormInputs = ({
       )}
       {(!isError || (isError && title !== "")) && <br />}
 
-      <label htmlFor="title">Tags:</label>
+      <label htmlFor="tags">Tags:</label>
       <div className={styles.tagSection}>
         <input
           type="text"
-          id="title"
-          name="title"
+          id="tags"
+          name="tags"
           className={styles.front}
           value={newTag}
           onChange={(e) => setNewTag(e.target.value)}

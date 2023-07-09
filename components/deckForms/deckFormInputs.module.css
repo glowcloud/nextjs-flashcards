@@ -11,7 +11,7 @@
 
 .tagSection button {
   flex-basis: 35%;
-  margin: 0;
+  margin: 0 !important;
 }
 
 .tags {

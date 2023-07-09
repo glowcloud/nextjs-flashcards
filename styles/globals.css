@@ -4,7 +4,7 @@
   --text-primary: black;
   --text-secondary: grey;
   --highlight: #00adb5;
-  --error: maroon;
+  --error: rgb(189, 32, 32);
   --success: green;
   --border: #888;
   --filter: brightness(1);
