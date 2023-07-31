@@ -96,7 +96,7 @@ const Decks = () => {
                       tagFilters.every((tag) => deck.tags.includes(tag))))
               )
               .map(({ id, title, tags }) => (
-                <DeckCardLink id={id} title={title} tags={tags} />
+                <DeckCardLink key={id} title={title} tags={tags} />
               ))}
           </div>
         </section>

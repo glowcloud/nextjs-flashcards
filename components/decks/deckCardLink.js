@@ -5,7 +5,6 @@ import utilStyles from "../../styles/utils.module.css";
 const DeckCardLink = ({ id, title, tags }) => {
   return (
     <Link
-      key={id}
       href={`/decks/${id}`}
       className={`${utilStyles.card} ${styles.card}`}
     >
